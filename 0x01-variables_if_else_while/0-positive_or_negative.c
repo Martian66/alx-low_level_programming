@@ -2,7 +2,6 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-/**
  * main - entry point
  *
  * return:always return 0
