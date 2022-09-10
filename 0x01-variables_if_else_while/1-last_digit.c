@@ -2,11 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - print if the number is greater than 5, less than zero or less than 6 and not 0
+ * main - print the last digit
  *
  * Description: using the main function
  * this program prints greater than 5, less than zero or less than 6 and not 0
- *  return:0
+ * return: 0
  */
 int main(void)
 {
