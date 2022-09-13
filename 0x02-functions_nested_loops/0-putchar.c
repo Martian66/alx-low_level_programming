@@ -8,7 +8,7 @@
 
 int main(void)
 {
-char *km = "_putchar"
+char *km = "_putchar";
 
 while (*km)
 {
