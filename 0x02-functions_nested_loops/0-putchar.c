@@ -10,10 +10,10 @@ char *km = "_putchar"
 
 while (*km)
 {
-_putchar(*km);
+putchar(*km);
 km++;
 }
-_putchar('\n');
+putchar('\n');
 
 return (0);
 }
