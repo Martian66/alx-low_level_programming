@@ -15,7 +15,7 @@ while (*km)
 putchar(*km);
 km++;
 }
-_putchar('\n');
+putchar('\n');
 
 return (0);
 }
