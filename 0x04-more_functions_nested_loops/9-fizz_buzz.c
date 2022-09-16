@@ -7,16 +7,17 @@
 
 int main(void)
 {
+
 int n = 1;
 
 while (n <= 100)
 {
-if (h % 3 == 0 && h % 5 == 0)
+if (n % 3 == 0 && n % 5 == 0)
 printf("FizzBuzz ");
 
-else if (h % 5 == 0)
+else if (n % 5 == 0)
 {
-if (h == 100)
+if (n == 100)
 {
 printf("Buzz");
 printf("\n");
@@ -24,13 +25,13 @@ printf("\n");
 else
 printf("Buzz ");
 }
-else if (h % 3 == 0)
+else if (n % 3 == 0)
 printf("Fizz ");
 
 else
-printf("%d ", h);
+printf("%d ", n);
 
-h++;
+n++;
 }
 return (0);
 
