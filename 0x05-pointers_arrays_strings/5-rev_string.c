@@ -12,8 +12,9 @@ void rev_string(char *s)
 
 int len = strlen(s);
 
-while (len--)
-putchar(*(s + len));
-putchar(10);
+while (*(s + len) != '\0')
+	len--;
+
+return (len);
 
 }
