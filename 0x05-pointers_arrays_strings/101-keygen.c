@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "main.h"
+
 /**
  *main - entry point
  *Description - password generator
@@ -24,6 +25,7 @@ c = rand() % 128;
 x += c;
 
 putchar(c);
+
 }
 
 putchar(2772 - x);
