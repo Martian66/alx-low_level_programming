@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  *_atoi - converts a string to an int
@@ -9,6 +9,7 @@ include "main.h"
 
 int _atoi(char *s)
 {
+
 int sign = 1;
 unsigned int num = 0;
 
