@@ -12,12 +12,14 @@
 char *_strcat(char *dest, char *src)
 {
 
-size_t size = strlen(dest);
+char src[20], dest[20];
 
-for (size_t i = 0; i <= strlen(source); i++)
+strcat(dest, src);
 
-dest[size + i] = source[i];
+putchar(dest);
 
-return (dest);
+putchar('\n');
+
+return (0);
 
 }
