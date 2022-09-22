@@ -13,14 +13,14 @@
 char *_strcat(char *dest, char *src)
 {
 
-char src[20], dest[20];
+int index = 0, dest_len = 0;
 
-strcat(dest, src);
+while (dest[index++])
+	dest_len++;
 
-putchar(dest);
+for (index = 0; src[index]; index++)
+	des[dest_len++] = src[index];
 
-putchar('\n');
-
-return (0);
+return (dest);
 
 }
