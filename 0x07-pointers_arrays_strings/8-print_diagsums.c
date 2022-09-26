@@ -33,6 +33,7 @@ sum2 += a[k];
 k = k + size - 1;
 
 }
+
 printf("%d, %d\n", sum1, sum2);
 
 }
