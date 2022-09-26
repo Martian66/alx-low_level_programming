@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  *print_chessboard - prints a chessboard
- *@a: the character to print
- *Return: No value
+ *@a: the character to prin
  */
 
 void print_chessboard(char (*a)[8])
