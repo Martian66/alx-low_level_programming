@@ -3,7 +3,7 @@
 
 /**
  *print_chessboard - prints a chessboard
- *@a: the character to prin
+ *@a: the character to print
  */
 
 void print_chessboard(char (*a)[8])
@@ -12,10 +12,12 @@ void print_chessboard(char (*a)[8])
 int k;
 int i;
 
-for (k = 0; k < 0; k++)
+for (k = 0; k < 8; k++)
 {
-for (i = 0; i < 0; i++)
+
+for (i = 0; i < 8; i++)
 {
+
 _putchar(a[k][i]);
 
 }
