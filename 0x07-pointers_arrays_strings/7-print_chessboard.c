@@ -23,9 +23,9 @@ if (i == 7)
 {
 
 
-putchar(a[k][i]);
+_putchar(a[k][i]);
 
-putchar('\n');
+_putchar('\n');
 
 }
 
