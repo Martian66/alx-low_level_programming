@@ -8,38 +8,38 @@
  *
  *Return: returns the number of bytes
  */
+
 unsigned int _strspn(char *s, char *accept)
-
-int count = 0;
-int i = 0;
-int j = 0;
-
-while (s[i] != '\0')
 {
 
-while (accept[j] != '\0')
+int i, j;
+int k = 0;
+
+for (i = 0; s[i] != '\0'; i++;
 {
 
-if (accept[j] == s[i])
+if (s[i] != 32)
 {
 
-count++;
+for (j = 0; accept[j] != '\0'; j++)
+{
+
+if (s[i] == accept[j])
+
+k++;
 
 }
 
-i++;
 }
 
-j = 0;
+else
 
-i++;
 
-if (s[i] == ' ')
-{
-break;
-}
+return (k);
+
 }
 
-return (count);
+return (k);
+
 
 }
