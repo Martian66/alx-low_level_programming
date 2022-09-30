@@ -12,30 +12,21 @@
 int main(int argc, char *argv[])
 {
 
-int i, j;
+(void) argc;
 
-if (argc == 1 || argc == 2)
+if (argv[1] && argv[2])
 {
 
-printf("Error\n");
+printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 
-return (1);
+return (0);
 
 }
 
 else
-{
 
-j = 1;
+printf("Error\n");
 
-for (i = 1; i < 3; i++)
-
-j *= atoi(argv[i]);
-
-printf("%d\n", j);
-
-}
-
-return (0);
+return (1);
 
 }
