@@ -9,16 +9,15 @@
  *Return: Always 0
  */
 
-void main(int argc, char *argv[])
-{
-int i;
-
-for (i = 0; i < argc; i++)
+int main(int argc, char **argv)
 {
 
-putchar(argv[i]);
-}
 
-putchar('\n);
+if (arg > 0)
+
+printf("%s\n", argv);
+
+
+return (0);
 
 }
