@@ -1,15 +1,17 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * main - a program that multiplies two numbers
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: Always 0
+ * Return: 1 if error, 0 if successful
  */
 
 int main(int argc, char *argv[])
+
 {
 
 (void) argc;
