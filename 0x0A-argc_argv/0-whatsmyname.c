@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ *main - a program that prints its name, followed by a new line.
  *@argc: size of the arg array
  *@argv: An argument containing the command line arguments
  *
@@ -9,12 +9,11 @@
  */
 
 int main(int argc, char *argv[])
+
 {
 
 
-argc--;
-
-printf("%s\n", argv[]);
+printf("%s\n", argv[argc * 0]);
 
 
 return (0);
