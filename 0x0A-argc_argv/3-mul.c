@@ -29,7 +29,7 @@ m = 1;
 
 for (k = 1; k < 3; k++)
 
-m *= atoi(argv[i]);
+m *= atoi(argv[k]);
 
 printf("%d\n", m);
 
