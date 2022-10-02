@@ -15,36 +15,44 @@
 int main(int argc, char *argv[])
 {
 
-int total, i;
+int i, j, length, sum;
+
 char *p;
-int num;
 
-total = 0;
-if (argc > 1)
-{
+if (argc < 2)
 
-for (i = 1; argv[i]; i++)
+	printf("0\n");
 
-{
-num = strtol(argv[i], &p, 10);
-if (!*p)
-
-total += num;
 
 else
-
 {
+	sum = 0;
 
-printf("Error\n");
+	for (i = 1; i < argc; i++)
+	{
+		ptr = argv[i];
+		length = strlen(ptr);
 
-return (1);
+		for (j = 0; j < length; j++)
+
+		{
+			if (isdigit(*(ptr + j)) == 0)
+			{
+				printf("Error\n");
+				return (1);
+
+			}
+
+		}
+
+		sum += atoi(argv[i]);
+
+	}
+
+	printf("%d\n", sum);
+}
+
+return (0);
 
 }
 
-}
-
-}
-
-printf("%d\n", total);
-
-}
