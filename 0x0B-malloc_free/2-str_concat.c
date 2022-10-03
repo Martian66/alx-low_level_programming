@@ -20,6 +20,7 @@ i = 0;
 
 else
 {
+
 for (i = 0; s1[i]; i++)
 	;
 }
@@ -44,10 +45,9 @@ for (n = 0; n < i; n++)
 
 s[n] = s1[n];
 
-for (n - 0; n < k; n++)
+for (n = 0; n < k; n++)
 
 s[i + k] = '\0';
-
 
 return (s);
 
