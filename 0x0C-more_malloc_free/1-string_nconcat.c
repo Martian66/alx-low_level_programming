@@ -47,7 +47,6 @@ for (count = 0; count < len1; count++)
 {
 ptr[count] = s1[count];
 }
-
 for (count1 = 0; count1 < sign; count1++)
 {
 ptr[count++] = s2[count1];
@@ -55,4 +54,3 @@ ptr[count++] = s2[count1];
 ptr[count++] = '\0';
 return (ptr);
 }
-
