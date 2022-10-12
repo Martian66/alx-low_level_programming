@@ -24,6 +24,7 @@ op_t ops[] = {
 
 int k;
 k = 0;
+
 while (k < 5)
 {
 if (ops[k].op[0] == s[0])
