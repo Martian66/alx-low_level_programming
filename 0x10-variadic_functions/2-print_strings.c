@@ -7,7 +7,9 @@
  *@separator: string to be printed
  *@n:number of strings passed to the function
  *
+ * Return: No value
  */
+
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 
