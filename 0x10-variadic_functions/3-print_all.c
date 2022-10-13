@@ -2,7 +2,6 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
-
 /**
  *print_all - prints anything
  *@format: list of argument types passed to the function
@@ -27,10 +26,8 @@ if (format[i] == t_arg[j] && c)
 {
 printf(",");
 break;
-
 } j++;
 }
-
 switch (format[i])
 {
 case 'c':
@@ -49,6 +46,8 @@ if (!str)
 printf("(nil)");
 break;
 }
+printf("%s", str);
+break;
 } i++;
 }
 printf("\n"), va_end(valist);
