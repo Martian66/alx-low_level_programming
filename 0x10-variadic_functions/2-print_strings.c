@@ -24,7 +24,7 @@ for (i = 0; i < n; i++)
 str = va_arg(valist, char *);
 if (str)
 
-printf("%s", str)
+printf("%s", str);
 
 else
 
