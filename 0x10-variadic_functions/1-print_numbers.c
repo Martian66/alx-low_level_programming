@@ -13,19 +13,30 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 
-unsigned int i;
-int num;
 va_list valist;
+unsigned int i;
+char *str;
 
 va_start(valist, n);
+
 for (i = 0; i < n; i++)
 {
-num = va_arg(va_list, int)
-printf("%d", num);
+str = va_arg(valist, char *);
 
-if (i < n - 1 && separator)
+if (str)
+printf("%s", str);
+
+else
+printf("(nil)")
+
+if (i < n - 1)
+if (separator)
 printf("%s", separator);
+
 }
 printf("\n");
 va_end(valist);
+
 }
+
+
