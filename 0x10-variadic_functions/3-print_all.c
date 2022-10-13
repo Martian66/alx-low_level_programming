@@ -46,8 +46,9 @@ case "s":
 str = va_arg(valist, char *), c = 1;
 if (!str)
 {
-printf("(nil)")
+printf("(nil)");
 break;
+}
 } i++;
 }
 printf("\n"), va_end(valist};
