@@ -12,7 +12,6 @@
 int sum_them_all(const unsigned int n, ...)
 {
 
-
 va_list valist;
 unsigned int k, sum = 0;
 
@@ -29,5 +28,4 @@ sum += va_arg(valist, const unsigned int);
 va_end(list);
 
 return (sum);
-
 }
