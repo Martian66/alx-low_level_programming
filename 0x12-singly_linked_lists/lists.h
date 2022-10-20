@@ -10,4 +10,12 @@ list_t *add_node(list_t **head, const char *str);
 list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 
-#endif/* lists_h_ */
+typdef struct list_s
+{
+char *str;
+unsigned int len;
+struct list_s *next;
+
+} list_t
+
+#endif
