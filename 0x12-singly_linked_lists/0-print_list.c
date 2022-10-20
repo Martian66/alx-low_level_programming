@@ -10,17 +10,17 @@
 
 size_t print_list(const list_t *h)
 {
-const list_t *current;
-size_t c;
 
-c = 0;
-current = h;
-while (current != NULL)
+const list_t *tmp;
+unsigned int k;
+
+tmp = h;
+for (k = 0; tmp; k++)
 {
-printf("[%d] %s\n", current->len, current->str);
+printf("[%u] %s\n", tmp->len, tmp->str);
 
-current = current->next;
-c++;
+tmp = tmp->next;
+
 }
-return (c);
+return (k);
 }
