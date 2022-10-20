@@ -7,7 +7,6 @@
  *
  * Return: Number of nodes
  */
-
 size_t print_list(const list_t *h)
 {
 
@@ -18,7 +17,6 @@ tmp = h;
 for (k = 0; tmp; k++)
 {
 printf("[%u] %s\n", tmp->len, tmp->str);
-
 tmp = tmp->next;
 
 }
