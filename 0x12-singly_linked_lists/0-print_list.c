@@ -10,15 +10,20 @@
 size_t print_list(const list_t *h)
 {
 
-const list_t *tmp;
-unsigned int k;
+size_t nodes = 0;
 
-tmp = h;
-for (k = 0; tmp; k++)
+while (h)
 {
-printf("[%u] %s\n", tmp->len, tmp->str);
-tmp = tmp->next;
+	if (h->str == NULL)
+		printf("[0] (nil)\n");
+
+	else
+	       printf("[%d] %s\n", h->len, h->str);
+
+	nodes++;
+	h = h->next;
 
 }
-return (k);
+
+return (nodes);
 }
