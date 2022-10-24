@@ -9,7 +9,7 @@
  * Return: pointer to current position in list
  */
 
-stint_t *add_nodeint_end(listint_t **head, const int n)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new;
 	listint_t *temp;
@@ -27,6 +27,7 @@ stint_t *add_nodeint_end(listint_t **head, const int n)
 		return (new);
 	}
 	temp = *head;
+
 	while (temp->next != NULL)
 		temp = temp->next;
 
