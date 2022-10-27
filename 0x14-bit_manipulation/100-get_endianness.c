@@ -6,7 +6,7 @@
  * Return: if big endian - 0, if small - 1
  */
 
-int get_endianness(void);
+int get_endianness(void)
 {
 	int num = 1;
 	char *endian = (char *)&num;
