@@ -1,0 +1,15 @@
+#include "hash_tables_h"
+/**
+ * key_index - sets a hash table
+ * @key: the key
+ * @size: the value for size
+ * Return: The index of the key
+ */
+
+unsigned long int key_index(const unsigned char *key, unsigned long int size)
+{
+	unsigned long int index;
+
+	index = hash_djb2(key) % size;
+	return (index);
+}
