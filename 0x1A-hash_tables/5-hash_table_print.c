@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print = prints a hash table
+ * hash_table_print - prints a hash table
  * @ht: pointer to hash table structure
  */
 
@@ -32,7 +32,7 @@ void hash_table_print(const hash_table_t *ht)
 				printf(", ");
 			ptr = ptr->next;
 		}
-		index ++;
+		index++;
 	}
 	printf("}\n");
 }
