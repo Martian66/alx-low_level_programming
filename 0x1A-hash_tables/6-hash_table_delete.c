@@ -7,23 +7,27 @@
  * Description: free and delete hash table
  * Return: no value
  */
+
 void hash_table_delete(hash_table_t *ht)
 {
 	unsigned int i = 0;
-	hash_node_t *ptr = NULL, *ahead = NULL;
+	hash_node_t *temporal = NULL;
+	hash_node_t *aux = NULL;
 
-	while (i < ht->size)
+	if (ht == NULL)
+		return;
+
+	for (i = 0; i < ht->size; i++)
 	{
-		ptr = ht->array[i];
-		while (ptr)
+		temporal = ht->array[i];
+		while (temporal)
 		{
-			ahead = ptr->next;
-			free(ptr->value);
-			free(ptr->key);
-			free(ptr);
-			ptr = ahead;
+			aux = temporal;
+			temporal = aux->next;
+			free(aux->value);
+			free(aux->key);
+			free(aux);
 		}
-		i++;
 	}
 	free(ht->array);
 	free(ht);
